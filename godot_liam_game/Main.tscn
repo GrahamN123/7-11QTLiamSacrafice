@@ -1,13 +1,11 @@
-[gd_scene load_steps=11 format=4 uid="uid://bn6b80q25bhta"]
+[gd_scene load_steps=12 format=4 uid="uid://k2satnt5h0q4"]
 
+[ext_resource type="Script" uid="uid://c01eo265e5xxr" path="res://character_body_2d.gd" id="1_7mycd"]
 [ext_resource type="Texture2D" uid="uid://dx5ltiurkvedx" path="res://pixilart-drawing (2).png" id="1_lquwl"]
 [ext_resource type="Texture2D" uid="uid://byc63palvl78w" path="res://assets/road.png" id="2_7mycd"]
-[ext_resource type="Texture2D" uid="uid://bqxgy3osc7cuo" path="res://assets/car.png" id="3_272bh"]
 [ext_resource type="Texture2D" uid="uid://cwcvosdbisvm7" path="res://assets/7-11.png" id="4_5vw27"]
+[ext_resource type="Texture2D" uid="uid://bde6d480dtqmk" path="res://assets/pixilart-drawing (3) (1).png" id="4_7mycd"]
 [ext_resource type="Texture2D" uid="uid://cpg73oi3nbvef" path="res://assets/quiktrip.png" id="5_kek77"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c57u"]
-size = Vector2(827, 1162)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_efxa6"]
 texture = ExtResource("2_7mycd")
@@ -144,6 +142,9 @@ texture = ExtResource("2_7mycd")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_efxa6")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4c57u"]
+size = Vector2(68, 80.5)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ycdy4"]
 size = Vector2(803.5, 801.5)
 
@@ -152,28 +153,31 @@ size = Vector2(745.5, 791.5)
 
 [node name="Node" type="Node"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(276, 30)
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(2573, 582)
-scale = Vector2(10.98, 11.2)
-texture = ExtResource("1_lquwl")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(2546, 611)
-shape = SubResource("RectangleShape2D_4c57u")
-
-[node name="TileMapLayer" type="TileMapLayer" parent="CharacterBody2D"]
-position = Vector2(-276, -30)
-scale = Vector2(15, 15)
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(-581, -337)
 tile_map_data = PackedByteArray("AAD8////AAAAAAEAAAD8/wAAAAAAAAIAAAD///3/AAAAAAEAAAD///7/AAAAAAIAAAAAAP3/AAABAAEAAAAAAP7/AAABAAIAAAABAP3/AAACAAEAAAABAP7/AAACAAIAAAACAP3/AAADAAEAAAACAP7/AAADAAIAAAADAP3/AAAEAAEAAAADAP7/AAAEAAIAAAAEAP3/AAAFAAEAAAAEAP7/AAAFAAIAAAAFAP3/AAAGAAEAAAAFAP7/AAAGAAIAAAAGAP3/AAAHAAEAAAAGAP7/AAAHAAIAAAAHAP3/AAAIAAEAAAAHAP7/AAAIAAIAAAAIAP3/AAAJAAEAAAAIAP7/AAAJAAIAAAAJAP3/AAAKAAEAAAAJAP7/AAAKAAIAAAAKAP3/AAALAAEAAAAKAP7/AAALAAIAAAALAP3/AAAAAAEAAAALAP7/AAAAAAIAAAAMAP3/AAABAAEAAAAMAP7/AAABAAIAAAANAP3/AAACAAEAAAANAP7/AAACAAIAAAAOAP3/AAADAAEAAAAOAP7/AAADAAIAAAAPAP3/AAAEAAEAAAAPAP7/AAAEAAIAAAAQAP3/AAAFAAEAAAAQAP7/AAAFAAIAAAARAP3/AAAGAAEAAAARAP7/AAAGAAIAAAASAP3/AAAHAAEAAAASAP7/AAAHAAIAAAATAP3/AAAIAAEAAAATAP7/AAAIAAIAAAAUAP3/AAAJAAEAAAAUAP7/AAAJAAIAAAAVAP3/AAAKAAEAAAAVAP7/AAAKAAIAAAAWAP3/AAALAAEAAAAWAP7/AAALAAIAAAAXAP3/AAAAAAEAAAAXAP7/AAAAAAIAAAAYAP3/AAABAAEAAAAYAP7/AAABAAIAAAAZAP3/AAACAAEAAAAZAP7/AAACAAIAAAAaAP3/AAADAAEAAAAaAP7/AAADAAIAAAAbAP3/AAAEAAEAAAAbAP7/AAAEAAIAAAAcAP3/AAAFAAEAAAAcAP7/AAAFAAIAAAAdAP3/AAAGAAEAAAAdAP7/AAAGAAIAAAAeAP3/AAAHAAEAAAAeAP7/AAAHAAIAAAAfAP3/AAAIAAEAAAAfAP7/AAAIAAIAAAAgAP3/AAAJAAEAAAAgAP7/AAAJAAIAAAAhAP3/AAAKAAEAAAAhAP7/AAAKAAIAAAAiAP3/AAALAAEAAAAiAP7/AAALAAIAAAAjAP3/AAAMAAEAAAAjAP7/AAAMAAIAAAAkAP3/AAANAAEAAAAkAP7/AAANAAIAAAAlAP3/AAAOAAEAAAAlAP7/AAAOAAIAAAA=")
 tile_set = SubResource("TileSet_dg77c")
 
-[node name="Car" type="Sprite2D" parent="."]
-position = Vector2(-244, 635)
-scale = Vector2(9.96875, 15.125)
-texture = ExtResource("3_272bh")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-23, -563)
+scale = Vector2(1, 1.02)
+texture = ExtResource("1_lquwl")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(765, -1687)
+script = ExtResource("1_7mycd")
+
+[node name="Car" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-785, 1116)
+scale = Vector2(1, 1.517)
+texture = ExtResource("4_7mycd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-786, 1099.75)
+shape = SubResource("RectangleShape2D_4c57u")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-791, 1108)
 
 [node name="Road" type="Sprite2D" parent="."]
 visible = false
@@ -193,7 +197,7 @@ position = Vector2(301.25, 1288.25)
 shape = SubResource("RectangleShape2D_ycdy4")
 
 [node name="Node2D2" type="Node2D" parent="."]
-position = Vector2(-22, 84)
+position = Vector2(-47, 81)
 
 [node name="Quiktrip" type="Sprite2D" parent="Node2D2"]
 position = Vector2(1321.0001, 1169.0001)

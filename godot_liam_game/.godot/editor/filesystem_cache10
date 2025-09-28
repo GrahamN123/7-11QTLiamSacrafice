@@ -1,10 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1759016677
-main.tscn::PackedScene::3362992348622521962::1759016601::0::1::::<><><>0<>0<><>::uid://dx5ltiurkvedx::::res://pixilart-drawing (2).png<>uid://byc63palvl78w::::res://assets/road.png<>uid://bqxgy3osc7cuo::::res://assets/car.png<>uid://cwcvosdbisvm7::::res://assets/7-11.png<>uid://cpg73oi3nbvef::::res://assets/quiktrip.png
-pixilart-drawing (2).png::CompressedTexture2D::8836239056249950581::1759007101::1759007101::1::::<><><>0<>0<>344f44d6c846ef7ab9624a2761273944<>res://.godot/imported/pixilart-drawing (2).png-9f7bc4def3f7aa9fa4634b54ec3f4c96.ctex::
-::res://assets/::1759008229
-7-11.png::CompressedTexture2D::6322425691005372540::1759007161::1759016678::1::::<><><>0<>0<>3fcef3c716faeb5f22470f67813f78ca<>res://.godot/imported/7-11.png-ec6a90c5830bc5d729a5de95dbc40226.ctex::
-ASSETS_README.txt::TextFile::-1::1759007161::0::1::::<><><>0<>0<><>::
-car.png::CompressedTexture2D::3557331524358147230::1759007161::1759016678::1::::<><><>0<>0<>1b23730038ce78066cc55497a0e5a34e<>res://.godot/imported/car.png-d32f5b1402097a8b34a6ade6a9b7d527.ctex::
-quiktrip.png::CompressedTexture2D::5840053983453875769::1759007161::1759016678::1::::<><><>0<>0<>63498490e3d4bdc4cb4894f54ce87151<>res://.godot/imported/quiktrip.png-06dcfbb2c463e572833c8589a0e92802.ctex::
-road.png::CompressedTexture2D::4077014703897670656::1759008229::1759016678::1::::<><><>0<>0<>b140604722b16fdb1d0d5984504b5ebe<>res://.godot/imported/road.png-72005ad96a94b3869b023c4f4a0b0b7d.ctex::
+::res://::1759017952
+main.tscn::PackedScene::758720560539512025::1759017952::0::1::::<><><>0<>0<><>::uid://c01eo265e5xxr::::res://character_body_2d.gd<>uid://dx5ltiurkvedx::::res://pixilart-drawing (2).png<>uid://byc63palvl78w::::res://assets/road.png<>uid://bqxgy3osc7cuo::::res://assets/car.png<>uid://cwcvosdbisvm7::::res://assets/7-11.png<>uid://cpg73oi3nbvef::::res://assets/quiktrip.png
+pixilart-drawing (2).png::CompressedTexture2D::8836239056249950581::1759016873::1759016908::1::::<><><>0<>0<>344f44d6c846ef7ab9624a2761273944<>res://.godot/imported/pixilart-drawing (2).png-9f7bc4def3f7aa9fa4634b54ec3f4c96.ctex::
+character_body_2d.gd::GDScript::6581505616417305643::1759017155::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://assets/::1759018077
+7-11.png::CompressedTexture2D::6322425691005372540::1759016873::1759016908::1::::<><><>0<>0<>3fcef3c716faeb5f22470f67813f78ca<>res://.godot/imported/7-11.png-ec6a90c5830bc5d729a5de95dbc40226.ctex::
+ASSETS_README.txt::TextFile::-1::1759016873::0::1::::<><><>0<>0<><>::
+car.png::CompressedTexture2D::3557331524358147230::1759016873::1759016908::1::::<><><>0<>0<>1b23730038ce78066cc55497a0e5a34e<>res://.godot/imported/car.png-d32f5b1402097a8b34a6ade6a9b7d527.ctex::
+pixilart-drawing (3) (1).png::CompressedTexture2D::2607133885077272586::1759018077::1759018077::1::::<><><>0<>0<>a55a24bcde1bcd7a603f12564343eafe<>res://.godot/imported/pixilart-drawing (3) (1).png-8569b8b6a1f03683fb60eaa59981a1e9.ctex::
+quiktrip.png::CompressedTexture2D::5840053983453875769::1759016873::1759016908::1::::<><><>0<>0<>63498490e3d4bdc4cb4894f54ce87151<>res://.godot/imported/quiktrip.png-06dcfbb2c463e572833c8589a0e92802.ctex::
+road.png::CompressedTexture2D::4077014703897670656::1759016873::1759016908::1::::<><><>0<>0<>b140604722b16fdb1d0d5984504b5ebe<>res://.godot/imported/road.png-72005ad96a94b3869b023c4f4a0b0b7d.ctex::
